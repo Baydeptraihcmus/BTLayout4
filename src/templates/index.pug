@@ -1,0 +1,85 @@
+extends _layout/layout
+
+//- Các giá trị mặc định cho trang web
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+
+//- Phần khai báo body
+block body
+	section.home-slider
+		.owl-carousel.owl-theme
+			.item
+				img(src="./img/baner.png", alt="")
+				.title
+					.container
+						.row
+							.col-sm-2
+							.col-md-8
+								h2 Chúng tôi làbow FullStack Vietnam
+								p Fullstack Deverlop là nghề cực hot hiện nay, những lập trình viên FullStack có đầy đủ nhưng kỹ năng tổng hợ
+							.col-sm-2
+			.item
+				img(src="./img/baner.png", alt="")
+				.title
+					.container
+						.row
+							.col-sm-2
+							.col-md-8
+								h2 Chúng tôi là FullStack Vietnam
+								p Fullstack Deverlop là nghề cực hot hiện nay, những lập trình viên FullStack có đầy đủ nhưng kỹ năng tổng hợp
+							.col-sm-2
+	section.home-news
+		.container
+			.row
+				.col
+					.headingnew
+						h2
+							b TIN TỨC
+			.row
+				.col-md-4.item
+					figure
+						.blockimg
+							img(src="./img/new1.png", alt="", srcset="")
+						figcaption
+							h3 
+								a(href="http://www.fullstackvietnam.com") Trung tâm đào tạo IT chuyên nghiệp
+							time 22/06/2018
+							p Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, rem? Aperiam iste itaque blanditiis autem accusamus vero ipsum ad, distinctio dolore reiciendis expedita minus animi quas libero nihil iure eum?
+				.col-md-4.item
+					figure
+						.blockimg
+							img(src="./img/new2.png", alt="", srcset="")
+						figcaption
+							h3 
+								a(href="#") Chúng tôi là FullStack Vietnam
+							time 22/06/2018
+							p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
+				.col-md-4.item
+					figure
+						.blockimg
+							img(src="./img/new3.png", alt="", srcset="")
+						figcaption
+							h3 
+								a(href="#") Chúng tôi là FullStack Vietnam
+							time 22/06/2018
+							p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
+	section.phattrien
+				.item
+					h2
+						b ĐỊNH HƯỚNG PHÁT TRIỂN
+							
+						
+								
+	//- section.home-clients.mt-5
+	//- 	.container
+	//- 		.row
+	//- 			.col
+	//- 				.owl-carousel.owl-theme
+	//- 					- for(x=1;x<10;x++)
+	//- 						.item
+	//- 							if (x < 7)
+	//- 								img(src="./img/clients_"+x+".png", alt="")
+	//- 							else
+	//- 								img(src="./img/clients_"+(x-3)+".png", alt="")

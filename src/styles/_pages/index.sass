@@ -1,0 +1,120 @@
+/////////////////////////////////
+// Phần Slider
+/////////////////////////////////
+.home-slider
+	.owl-carousel
+		// Phần Slider
+		.item
+			position: relative
+			.title
+				height: 100%
+				width: 100%
+				display: flex
+				align-items: center
+				text-align: center
+			+media-breakpoint-up(md)
+				.title
+					position: absolute
+					bottom: 0
+					left: 0
+					height: 50%
+					width: 60%
+					color: #ffffff
+					width: 100%
+					background: linear-gradient(0deg, #000000, #ffffff00)
+					text-align: center
+		// Phần Control
+		.owl-dots
+			margin-bottom: 2rem
+
+			
+/////////////////////////////////
+// Phần News
+/////////////////////////////////
+
+.home-news
+	.headingnew
+		h2
+			position: relative
+			text-align: center
+			margin-bottom: 3rem
+			&:after
+				position: absolute
+				content: ""
+				display: block
+				height: 1.5rem
+				width: 1.5rem
+				background: #ffffff
+				border: 3px solid #1fcbd0
+				left: 50%
+				bottom: -25px
+				transform: translateX(-50%)
+				border-radius: 50%
+			&:before
+				content: ""
+				display: block
+				height: 3px
+				background: #1fcbd0
+				width: 75px
+				position: absolute
+				left: 50%
+				bottom: -16px
+				transform: translateX(-50%)
+	.item
+		figure
+			margin: 1rem
+			.blockimg
+				overflow: hidden
+				img
+					width: 100%
+			figcaption 
+				text-align: center
+				margin-top: 1rem
+				h3 
+					+fz(1.1rem)
+					margin-bottom: 0
+					a
+						color: #000000
+				time 
+					+fz(.85rem)
+					color: darken($whites,30%)
+				p 
+					margin-top: .5rem
+					color: darken($whites,30%)
+		&:hover
+			.blockimg
+				box-shadow: 0px 0px 10px 0px #007bff
+			figcaption
+				h3
+					a
+						color: #007bff
+				p
+					color: darken($whites,100%)
+.phattrien
+	.item
+		background-image: url("../img/backgroudnew.png")
+		height: -webkit-fill-available
+		.blockimg
+			.img-fluid
+				margin-top: 1rem
+				position: relative
+			h2
+				b
+					text-align: center
+/////////////////////////////////
+// Phần News
+/////////////////////////////////
+
+// .home-clients
+// 	.owl-carousel
+// 		.item 
+// 			+pad(.5rem)
+// 		// Phần Control
+// 		.owl-nav
+// 			margin-bottom: 2rem
+// 			button 
+// 				i 
+// 					display: block
+// 					width: 2rem
+// 					height: 2rem
+// 					+lh(2rem)
